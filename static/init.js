@@ -78,7 +78,7 @@ L.geoJSON(la_cds, {
     style: myStyle,
     onEachFeature: function (feature, layer) {
         if (map.getZoom() < 15) {
-            layer.bindTooltip('<div class="inthetip"><h6>CD-'+feature.properties["DISTRICT_N"]+'</h6><p>'+feature.properties["COUNCIL_ME"]+'</div>',{direction:"center"})
+            layer.bindTooltip('<div class="inthetip"><h6>CD-'+feature.properties["DISTRICT_N"]+'</h6><p>'+feature.properties["COUNCIL_ME"]+'<br>CDC Sweeps:'+feature.properties["CDC"]+'</div>',{direction:"center"})
         } else { // when zoom >= 12
 //            layer.bindTooltip('<div class="inthetip"></div>',{permanent:false,direction:"center"})
         };
