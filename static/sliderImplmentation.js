@@ -2,7 +2,7 @@
 // constants for the slider
 const slider = document.getElementById('map-slider');
 const default_start_date = 'Jan 1,2020'
-const default_end_date = 'Dec 1,2020'
+const default_end_date = 'Oct 1,2020'
 
 // TO-DO: need to change the months to use the start and end dates...
 monthVals = months_short.map(month=>Date.parse(month+" 1, 2020"))
@@ -68,7 +68,7 @@ let Slider = L.Control.extend({
     onAdd: function (map) {
       let controlSlider = L.DomUtil.create('div', 'map-slider', L.DomUtil.get('map'));
       // here we can fill the slider with colors, strings and whatever
-      controlSlider.innerHTML = '<form><input id="command" type="checkbox"/>command</form>'; 
+    //   controlSlider.innerHTML = '<form><input id="command" type="checkbox"/>command</form>'; 
       return controlSlider;
     },
   });

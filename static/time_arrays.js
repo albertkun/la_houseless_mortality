@@ -5,7 +5,7 @@ const weekdays = [
 ];
 
 const months_short = [
-    "Jan", "Feb", "Mar","Apr", "May", "Jun", "Jul","Aug", "Sep", "Oct","Nov", "Dec"
+    "Jan", "Feb", "Mar","Apr", "May", "Jun", "Jul","Aug", "Sep", "Oct","Oct", "Dec"
 ];
 
 // const months = [

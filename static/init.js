@@ -66,6 +66,25 @@ L.control.logo = function(opts) {
 L.control.logo({ position: 'bottomright' }).addTo(map);
 
 
+var myStyle = {
+    "color": "rgb(167, 29, 29)",
+    "weight": 2,
+    "opacity": 0.2,
+    "fillOpacity": 0.05
+};
+
+
+L.geoJSON(la_cds, {
+    style: myStyle,
+    onEachFeature: function (feature, layer) {
+        if (map.getZoom() < 15) {
+            layer.bindTooltip('<div class="inthetip"><h6>CD-'+feature.properties["DISTRICT_N"]+'</h6><p>'+feature.properties["COUNCIL_ME"]+'</div>',{direction:"center"})
+        } else { // when zoom >= 12
+//            layer.bindTooltip('<div class="inthetip"></div>',{permanent:false,direction:"center"})
+        };
+      }}).addTo(map);
+
+    //   onEachFeature}).bindTooltip(feature.properties.DISTRICT_N,{permanent:true,direction:"center"})
 
 ////////// add the hex bin here //////////
 // Create the hexlayer
@@ -95,6 +114,16 @@ hexLayer.dispatch()
 
 
 ////////// begin the helper functions //////////
+function onEachFeature(feature, layer) {
+    // does this feature have a property named popupContent?
+    if (feature.properties && feature.properties.popupContent) {
+        layer.bindPopup(feature.properties.popupContent);
+    }
+}
+
+
+
+
 function timestamp(str) {
     return new Date(str).getTime();
 }
@@ -102,7 +131,7 @@ function timestamp(str) {
 function addDataToHexMap(obj,start_date,end_date){
     let map_data
     if (start_date !== undefined){
-        let filtered_obj = obj.filter(data => timestamp(data.properties['Date']) >= start_date && timestamp(data.properties['Date']) <= end_date)
+        let filtered_obj = obj.filter(data => timestamp(data.attributes['Date']) >= start_date && timestamp(data.attributes['Date']) <= end_date)
         console.log('date provided')
         // console.log(end_date)
         map_data = filtered_obj
@@ -113,7 +142,7 @@ function addDataToHexMap(obj,start_date,end_date){
         map_data = obj
     }
     // get only the lat/long
-    let geo_points = map_data.map(feature => ([feature.geometry.coordinates[0],feature.geometry.coordinates[1]]));
+    let geo_points = map_data.map(feature => ([feature.geometry.x,feature.geometry.y]));
     //console.log(geo_points)
     hexLayer.data(geo_points)
     let total = geo_points.length
