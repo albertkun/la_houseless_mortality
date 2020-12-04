@@ -3187,7 +3187,7 @@ const la_cds = {
       },
       "properties" : {
         "FID" : 0,
-        "CDC" : "Yes",
+        "CDC" : "YES",
         "DISTRICT_N" : "7",
         "COUNCIL_ME" : "MONICA RODRIGUEZ"
       }
@@ -5776,7 +5776,7 @@ const la_cds = {
       },
       "properties" : {
         "FID" : 1,
-        "CDC" : "Yes",
+        "CDC" : "YES",
         "DISTRICT_N" : "12",
         "COUNCIL_ME" : "JOHN LEE"
       }
@@ -7945,7 +7945,7 @@ const la_cds = {
       },
       "properties" : {
         "FID" : 2,
-        "CDC" : "Yes",
+        "CDC" : "YES",
         "DISTRICT_N" : "6",
         "COUNCIL_ME" : "NURY MARTINEZ"
       }
@@ -10622,7 +10622,7 @@ const la_cds = {
       },
       "properties" : {
         "FID" : 3,
-        "CDC" : "Yes",
+        "CDC" : "YES",
         "DISTRICT_N" : "3",
         "COUNCIL_ME" : "BOB BLUMENFIELD"
       }
@@ -14607,7 +14607,7 @@ const la_cds = {
       },
       "properties" : {
         "FID" : 4,
-        "CDC" : "Yes",
+        "CDC" : "YES",
         "DISTRICT_N" : "2",
         "COUNCIL_ME" : "PAUL KREKORIAN"
       }
@@ -21912,7 +21912,7 @@ const la_cds = {
       },
       "properties" : {
         "FID" : 5,
-        "CDC" : "Yes",
+        "CDC" : "YES",
         "DISTRICT_N" : "5",
         "COUNCIL_ME" : "PAUL KORETZ"
       }
@@ -30993,7 +30993,7 @@ const la_cds = {
       },
       "properties" : {
         "FID" : 6,
-        "CDC" : "No",
+        "CDC" : "NO",
         "DISTRICT_N" : "4",
         "COUNCIL_ME" : "DAVID RYU"
       }
@@ -34186,7 +34186,7 @@ const la_cds = {
       },
       "properties" : {
         "FID" : 7,
-        "CDC" : "Yes",
+        "CDC" : "YES",
         "DISTRICT_N" : "13",
         "COUNCIL_ME" : "MITCH O'FERRELL"
       }
@@ -37943,7 +37943,7 @@ const la_cds = {
       },
       "properties" : {
         "FID" : 8,
-        "CDC" : "Yes",
+        "CDC" : "YES",
         "DISTRICT_N" : "14",
         "COUNCIL_ME" : "KEVIN DE LEON"
       }
@@ -44210,7 +44210,7 @@ const la_cds = {
       },
       "properties" : {
         "FID" : 9,
-        "CDC" : "No",
+        "CDC" : "NO",
         "DISTRICT_N" : "11",
         "COUNCIL_ME" : "MIKE BONIN"
       }
@@ -47343,7 +47343,7 @@ const la_cds = {
       },
       "properties" : {
         "FID" : 10,
-        "CDC" : "Yes",
+        "CDC" : "YES",
         "DISTRICT_N" : "1",
         "COUNCIL_ME" : "GIL CEDILLO"
       }
@@ -49576,7 +49576,7 @@ const la_cds = {
       },
       "properties" : {
         "FID" : 11,
-        "CDC" : "Yes",
+        "CDC" : "YES",
         "DISTRICT_N" : "10",
         "COUNCIL_ME" : "HERB WESSON"
       }
@@ -50625,7 +50625,7 @@ const la_cds = {
       },
       "properties" : {
         "FID" : 12,
-        "CDC" : "Yes",
+        "CDC" : "YES",
         "DISTRICT_N" : "9",
         "COUNCIL_ME" : "CURREN PRICE"
       }
@@ -53334,7 +53334,7 @@ const la_cds = {
       },
       "properties" : {
         "FID" : 13,
-        "CDC" : "Yes",
+        "CDC" : "YES",
         "DISTRICT_N" : "8",
         "COUNCIL_ME" : "MARQUEECE HARRIS-DAWSON"
       }
@@ -58687,7 +58687,7 @@ const la_cds = {
       },
       "properties" : {
         "FID" : 14,
-        "CDC" : "Yes",
+        "CDC" : "YES",
         "DISTRICT_N" : "15",
         "COUNCIL_ME" : "JOE BUSCAINO"
       }
