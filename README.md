@@ -1,5 +1,4 @@
-# Leaflet Hex Timeslider
-<img width="664" alt="2020-12-02 02_32_27-Clipboard" src="https://user-images.githubusercontent.com/8574425/100862385-f6086600-3447-11eb-8ecf-9717d8d73be6.png">
+# Los Angeles Houseless Mortality Project
 
 This is a hex bin implementation of leaflet + d3 + nouislider, using vanilla JavaScript with ECM 2016 web standards, so Internet Explorer is not supported.
 
